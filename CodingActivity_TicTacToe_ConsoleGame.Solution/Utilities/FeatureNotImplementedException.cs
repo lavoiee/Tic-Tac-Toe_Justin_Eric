@@ -15,7 +15,8 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
         public FeatureNotImplementedException(string message)
         {
-
+            Console.WriteLine();
+            Console.WriteLine(message);
         }
 
         public FeatureNotImplementedException(string message, Exception inner)
