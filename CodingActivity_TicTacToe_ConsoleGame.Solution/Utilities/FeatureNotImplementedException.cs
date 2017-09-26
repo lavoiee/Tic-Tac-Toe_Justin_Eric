@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingActivity_TicTacToe_ConsoleGame.Utilities
+namespace CodingActivity_TicTacToe_ConsoleGame
 {
     public class FeatureNotImplementedException : Exception
     {

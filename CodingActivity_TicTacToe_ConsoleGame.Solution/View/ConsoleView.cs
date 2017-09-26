@@ -264,16 +264,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         // Consider using a user defined exception to catch when a user attempts to sign in when they are 
         // already signed in.
         //
-        private void SignIn()
-        {
-            
-        }
-
-        //
-        // Consider using a user defined exception to catch when a user attempts to create an account that 
-        // already exists.
-        //
-        public void CreateAccount()
+        public void SignIn()
         {
             try
             {
@@ -290,6 +281,30 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 ConsoleUtil.DisplayMessage("This part of the application is still under construction.");
                 DisplayContinuePrompt();
             }
+        }
+
+        //
+        // Consider using a user defined exception to catch when a user attempts to create an account that 
+        // already exists.
+        //
+        public void CreateAccount()
+        {
+            throw new FeatureNotImplementedException("Sorry, but this feature has not been implemented yet.");
+            //try
+            //{
+
+            //}
+            //catch (NotImplementedException)
+            //{
+
+            //}
+            //finally
+            //{
+            //    ConsoleUtil.DisplayReset();
+            //    Console.WriteLine();
+            //    ConsoleUtil.DisplayMessage("This part of the application is still under construction.");
+            //    DisplayContinuePrompt();
+            //}
         }
 
         /// <summary>

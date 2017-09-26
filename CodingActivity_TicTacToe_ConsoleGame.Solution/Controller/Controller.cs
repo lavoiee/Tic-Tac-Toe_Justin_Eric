@@ -116,6 +116,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     PlayGame();
                     break;
                 case MenuOption.SignIn:
+                    _gameView.SignIn();
                     DisplayMenu();
                     break;
                 case MenuOption.GameRules:
