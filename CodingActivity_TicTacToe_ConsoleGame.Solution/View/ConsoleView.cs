@@ -161,6 +161,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         /// <returns>enum</returns>
         public MenuOption DisplayGetMenuChoice()
         {
+            string shifty = new String(' ', 34);
             MenuOption menuChoice = MenuOption.None;
 
             Console.WriteLine();
@@ -176,7 +177,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("*******************************************************************************");
-            ConsoleUtil.DisplayMessage(ConsoleUtil.Center(" Main Menu "));
+            Console.WriteLine(shifty + " Main Menu ");
             Console.WriteLine("*******************************************************************************");
             
             Console.WriteLine();
@@ -245,11 +246,12 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         /// </summary>
         public void DisplayGameRules()
         {
+            string shifty = new String(' ', 22);
             ConsoleUtil.DisplayReset();
             ConsoleUtil.HeaderText = "Rules for Tic-Tac-Toe";
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("*******************************************************************************");
-            ConsoleUtil.DisplayMessage(ConsoleUtil.Center("          Rules of the Game"));
+            Console.WriteLine(shifty + "           Rules of the Game");
             Console.WriteLine("*******************************************************************************");
             Console.ForegroundColor = ConsoleColor.Gray;
             ConsoleUtil.DisplayMessage(
