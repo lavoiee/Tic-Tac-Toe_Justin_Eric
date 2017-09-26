@@ -217,7 +217,8 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                         _gameboard.InitializeGameboard();
                         _gameView.InitializeView();
                         _playingRound = true;
-                        DisplayMenu();
+                        PlayGame();
+                        //DisplayMenu();
                     }
                     else
                     {
