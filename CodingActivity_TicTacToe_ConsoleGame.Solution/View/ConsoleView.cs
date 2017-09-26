@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
+using System.IO;
 
 namespace CodingActivity_TicTacToe_ConsoleGame
 {
@@ -270,11 +271,11 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         {
             try
             {
-
+                DirectoryInfo myDir = new DirectoryInfo(@"G;");
             }
-            catch (NotImplementedException)
+            catch (Exception)
             {
-
+                throw new FeatureNotImplementedException("Sorry that doesn't work yet :(");
             }
             finally
             {
@@ -291,7 +292,21 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         //
         public void CreateAccount()
         {
-            throw new FeatureNotImplementedException("Sorry, but this feature has not been implemented yet.");
+            try
+            {
+                DirectoryInfo myDir = new DirectoryInfo(@"G;");
+            }
+            catch (Exception)
+            {
+                throw new FeatureNotImplementedException("Sorry that doesn't work yet :(");
+            }
+            finally
+            {
+                ConsoleUtil.DisplayReset();
+                Console.WriteLine();
+                ConsoleUtil.DisplayMessage("This part of the application is still under construction.");
+                DisplayContinuePrompt();
+            }
         }
 
         /// <summary>
