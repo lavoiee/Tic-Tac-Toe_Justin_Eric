@@ -297,7 +297,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 // My attempt at creating a method that will fail.
                 DirectoryInfo myDir = new DirectoryInfo(@"32s1f....///;");
             }
-            catch (Exception)
+            catch (FeatureNotImplementedException)
             {
                 throw new FeatureNotImplementedException("Sorry that doesn't work yet :(");
             }
