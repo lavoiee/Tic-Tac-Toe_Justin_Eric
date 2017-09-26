@@ -290,21 +290,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         public void CreateAccount()
         {
             throw new FeatureNotImplementedException("Sorry, but this feature has not been implemented yet.");
-            //try
-            //{
-
-            //}
-            //catch (NotImplementedException)
-            //{
-
-            //}
-            //finally
-            //{
-            //    ConsoleUtil.DisplayReset();
-            //    Console.WriteLine();
-            //    ConsoleUtil.DisplayMessage("This part of the application is still under construction.");
-            //    DisplayContinuePrompt();
-            //}
         }
 
         /// <summary>
