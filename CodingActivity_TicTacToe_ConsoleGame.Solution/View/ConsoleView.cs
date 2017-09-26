@@ -294,7 +294,8 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         {
             try
             {
-                DirectoryInfo myDir = new DirectoryInfo(@"G;");
+                // My attempt at creating a method that will fail.
+                DirectoryInfo myDir = new DirectoryInfo(@"32s1f....///;");
             }
             catch (Exception)
             {
